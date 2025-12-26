@@ -52,7 +52,7 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendi
     <li>🏢 <a href="https://kartunet.com" target="_blank" style="font-weight:bold;">Kartunet</a> (Media)</li>
     <li>🛠️ <a href="https://accessible.web.id" target="_blank" style="font-weight:bold;">Accessible.web.id</a> (Tech Tools)</li>
     <li>⚖️ <a href="https://disabilitas.com" target="_blank" style="font-weight:bold;">Disabilitas.com</a> (Konsultan)</li>
-    <li>🤝 <strong>Forum ASN Inklusif</strong> (Advokasi)</li>
+    <li>🤝 <a href="https://www.asninklusif.or.id" target="_blank" style="font-weight:bold;">Forum ASN Inklusif</a> (Advokasi)</li>
   </ul>
 </section>
 
