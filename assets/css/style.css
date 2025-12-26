@@ -47,7 +47,11 @@ img { max-width: 100%; height: auto; }
 /* 5. AKSESIBILITAS (WCAG AAA) */
 .skip-link {
   position: absolute; top: -40px; left: 0;
-  background: var(--primary-color); color: #fff; padding: 8px; z-index: 100;
+  background: var(--primary-color); 
+  /* PERBAIKAN DI SINI: Menggunakan variabel background agar kontras selalu terjaga */
+  color: var(--bg-color); 
+  padding: 8px; z-index: 100;
+  font-weight: bold;
 }
 .skip-link:focus { top: 0; }
 
@@ -63,7 +67,7 @@ header {
 }
 .navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
 .brand-group { display: flex; align-items: center; gap: 10px; }
-.brand-logo { height: 40px; width: auto; } /* Style untuk logo.png */
+.brand-logo { height: 40px; width: auto; }
 .brand { font-size: 1.2rem; font-weight: bold; color: var(--primary-color); }
 
 nav ul { display: flex; list-style: none; gap: 15px; padding: 0; margin: 0; }
