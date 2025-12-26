@@ -1,0 +1,24 @@
+<header>
+  <div class="container navbar">
+    <div class="brand-group">
+      <img src="{{ '/logo.png' | relative_url }}" alt="Logo Dimas" class="brand-logo" onerror="this.style.display='none'">
+      <a href="{{ '/' | relative_url }}" class="brand">
+        Dimas P. Muharam
+      </a>
+    </div>
+    
+    <div class="nav-wrapper">
+      <nav>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          <a href="{{ '/speaking/' | relative_url }}">Speaking</a>
+          <a href="{{ '/blog/' | relative_url }}">Writings</a>
+          <a href="{{ '/tools/' | relative_url }}">Tools</a>
+      </nav>
+    </div>
+
+    <div class="nav-tools">
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      <button id="lang-toggle" aria-label="Switch Language">ID</button>
+    </div>
+  </div>
+</header>
