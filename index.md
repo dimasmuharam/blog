@@ -1,52 +1,71 @@
 ---
 layout: default
-title: Home
+title: Beranda
 permalink: /
+description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendiri Dimaster Group. Mengadvokasi kebijakan inklusif melalui riset dan teknologi.
 ---
 
-<section style="padding: 40px 0; border-bottom: 1px dashed var(--border-color);">
-  <span style="background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; font-size: 0.9em;">
-    🇬🇧 Chevening Scholar 2025
-  </span>
+<section style="padding: 40px 0; border-bottom: 1px dashed var(--border-color); display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 40px;">
   
-  <h1 style="font-size: 2.5rem; margin-top: 20px; line-height: 1.2;">
-    Bridging Policy, Technology, and Inclusivity.
-  </h1>
-  
-  <p style="font-size: 1.2rem; max-width: 700px;">
-    Hi, I am <strong>Dimas P. Muharam</strong>. <br>
-    Researcher at <strong>BRIN</strong> (Pusat Riset Pendidikan), Social Policy Student at <strong>University of Leeds</strong>, and Founder of <strong>Dimaster Group</strong>.
-  </p>
+  <div style="flex: 2; min-width: 300px;">
+    <span style="background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; letter-spacing: 0.5px;">
+      🇬🇧 Chevening Scholar 2025
+    </span>
+    
+    <h1 style="font-size: 2.5rem; margin-top: 15px; line-height: 1.2;">
+      Menjembatani Kebijakan, Teknologi, dan Inklusivitas.
+    </h1>
+    
+    <p style="font-size: 1.2rem; margin-bottom: 25px;">
+      Halo, saya <strong>Dimas P. Muharam</strong>. <br>
+      Peneliti di <strong>BRIN</strong> (Pusat Riset Pendidikan), Mahasiswa Kebijakan Sosial di <strong>University of Leeds</strong>, dan Pendiri <strong>Dimaster Group</strong>.
+    </p>
 
-  <div style="margin-top: 30px; display: flex; gap: 15px;">
-    <a href="/blog/" class="button" style="background: var(--primary-color); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Read My Research</a>
-    <a href="/speaking/" class="button" style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 10px 20px; border-radius: 5px; font-weight: bold;">Invite to Speak</a>
+    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+      <a href="/blog/" class="button" style="background: var(--primary-color); color: white; padding: 12px 25px; border-radius: 6px; font-weight: bold;">Baca Riset Saya</a>
+      <a href="/speaking/" class="button" style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; border-radius: 6px; font-weight: bold;">Undang Bicara</a>
+    </div>
   </div>
+
+  <div style="flex: 1; min-width: 250px; text-align: center;">
+    <img 
+      src="/images/profile-dimas.jpg" 
+      alt="Foto Profil Dimas Prasetyo Muharam" 
+      style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 5px solid var(--card-bg); box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
+      onerror="this.style.display='none'" 
+    >
+  </div>
+
 </section>
 
-<section style="padding: 30px 0;">
-  <h2>The Ecosystem</h2>
-  <p>Leading the digital inclusion movement in Indonesia via Dimaster Group:</p>
-  <ul style="list-style: none; padding: 0; display: flex; gap: 20px; flex-wrap: wrap;">
-    <li>🏢 <a href="https://kartunet.com" target="_blank"><strong>Kartunet</strong></a> (Media)</li>
-    <li>🛠️ <a href="https://accessible.web.id" target="_blank"><strong>Accessible.web.id</strong></a> (Tech Tools)</li>
-    <li>⚖️ <a href="https://disabilitas.com" target="_blank"><strong>Disabilitas.com</strong></a> (Consulting)</li>
-    <li>🤝 <strong>Forum ASN Inklusif</strong> (Advocacy)</li>
+<section style="padding: 40px 0;">
+  <h2>Ekosistem Digital</h2>
+  <p>Memimpin gerakan inklusi digital di Indonesia melalui jaringan Dimaster Group:</p>
+  <ul style="list-style: none; padding: 0; display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+    <li>🏢 <a href="https://kartunet.com" target="_blank" style="font-weight:bold;">Kartunet</a> (Media)</li>
+    <li>🛠️ <a href="https://accessible.web.id" target="_blank" style="font-weight:bold;">Accessible.web.id</a> (Tech Tools)</li>
+    <li>⚖️ <a href="https://disabilitas.com" target="_blank" style="font-weight:bold;">Disabilitas.com</a> (Konsultan)</li>
+    <li>🤝 <strong>Forum ASN Inklusif</strong> (Advokasi)</li>
   </ul>
 </section>
 
-<section style="background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); margin-top: 30px;">
-  <h2 style="margin-top: 0;">Strategic Tools</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-    <div>
-      <h3>🧮 ROI Calculator</h3>
-      <p>Hitung dampak ekonomi inklusi bisnis.</p>
-      <a href="/tools/roi-calculator/">Coba Kalkulator &rarr;</a>
-    </div>
-    <div>
-      <h3>🔍 Ecosystem Search</h3>
-      <p>Cari data di seluruh Dimaster Group.</p>
-      <a href="/tools/ecosystem-search/">Mulai Cari &rarr;</a>
-    </div>
+<section style="background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); margin-top: 30px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+    <h2 style="margin: 0;">Strategic Tools</h2>
+    <a href="/tools/" style="font-weight: bold;">Lihat Semua &rarr;</a>
+  </div>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+    <a href="/tools/roi-calculator/" style="text-decoration: none; color: var(--text-color); background: var(--bg-color); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.2s; display: block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+      <span style="font-size: 2rem;">🧮</span>
+      <h3 style="margin: 10px 0; font-size: 1.2rem; color: var(--primary-color);">ROI Calculator</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Hitung kerugian ekonomi jika bisnis Anda tidak aksesibel.</p>
+    </a>
+    
+    <a href="/tools/citation/" style="text-decoration: none; color: var(--text-color); background: var(--bg-color); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.2s; display: block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+      <span style="font-size: 2rem;">📚</span>
+      <h3 style="margin: 10px 0; font-size: 1.2rem; color: var(--primary-color);">Citation Generator</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Buat kutipan akademik otomatis untuk karya tulis saya.</p>
+    </a>
   </div>
 </section>
