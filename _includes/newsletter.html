@@ -1,41 +1,82 @@
 <div class="newsletter-box" style="
     background: linear-gradient(135deg, var(--primary-color) 0%, #4a1229 100%);
     color: white;
-    padding: 40px 30px;
+    padding: 3rem 2rem;
     border-radius: 12px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 3rem 0;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
 ">
-    <div style="max-width: 600px; margin: 0 auto;">
-        <span style="font-size: 3rem; display: block; margin-bottom: 10px;">📩</span>
+    <div style="position: absolute; top: -20px; right: -20px; font-size: 10rem; opacity: 0.05; pointer-events: none;">📩</div>
+
+    <div style="max-width: 600px; margin: 0 auto; position: relative; z-index: 2;">
         
-        <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">
-            Join the "Inclusion Insider"
+        <h2 style="color: white; margin-top: 0; font-size: 1.8rem; margin-bottom: 10px;">
+            Inclusion Insider
         </h2>
         
-        <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 25px; line-height: 1.6;">
-            Dapatkan analisis kebijakan terbaru, update riset, dan strategi inklusi digital langsung ke inbox Anda. 
-            Tanpa spam, hanya esensi.
+        <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; line-height: 1.5;">
+            Dapatkan ringkasan riset kebijakan, tips aksesibilitas, dan strategi inklusi digital langsung di inbox Anda.
         </p>
 
-        <a href="https://dimasmuharam.substack.com" target="_blank" class="button" style="
-            background: white; 
-            color: var(--primary-color); 
-            padding: 15px 35px; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            font-size: 1.1rem;
-            display: inline-block;
-            transition: transform 0.2s;
-            text-decoration: none;
-        " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            Berlangganan Gratis (Subscribe) &rarr;
-        </a>
-        
-        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.7;">
-            Bergabung dengan rekan ASN, peneliti, dan aktivis lainnya.
+        <form 
+            action="https://dimasmuharam.substack.com/api/v1/free?no_js=true" 
+            method="post" 
+            target="_blank"
+            style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;"
+        >
+            
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Masukkan alamat email Anda..." 
+                aria-label="Alamat Email" 
+                required
+                style="
+                    flex: 1;
+                    min-width: 250px;
+                    padding: 15px 20px;
+                    border-radius: 50px;
+                    border: 2px solid rgba(255,255,255,0.2);
+                    background: rgba(255,255,255,0.1);
+                    color: white;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: all 0.3s;
+                "
+                onfocus="this.style.background='white'; this.style.color='black';"
+                onblur="if(this.value===''){this.style.background='rgba(255,255,255,0.1)'; this.style.color='white';}"
+            >
+
+            <button 
+                type="submit" 
+                style="
+                    background: white;
+                    color: var(--primary-color);
+                    border: none;
+                    padding: 15px 30px;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: transform 0.2s;
+                "
+                onmouseover="this.style.transform='scale(1.05)'" 
+                onmouseout="this.style.transform='scale(1)'"
+            >
+                Berlangganan
+            </button>
+            
+            <input type="hidden" name="first_url" value="https://dimasmuharam.substack.com/p/coming-soon" style="display:none">
+            <input type="hidden" name="first_referrer" value="https://dimasmuharam.substack.com/" style="display:none">
+            <input type="hidden" name="source" value="cover_page" style="display:none">
+            
+        </form>
+
+        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">
+            Bergabung dengan 1,200+ pembaca lainnya. Unsubscribe kapan saja.
         </p>
     </div>
 </div>
