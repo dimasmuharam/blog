@@ -1,0 +1,92 @@
+/* 1. FONT AKSESIBILITAS: Atkinson Hyperlegible */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 2. VARIABEL WARNA */
+:root {
+  --bg-color: #FAFAFA;       /* Off-white */
+  --text-color: #1A202C;     /* Charcoal Black */
+  --primary-color: #781D42;  /* LEEDS MAROON (Branding Utama) */
+  --accent-color: #0056b3;   /* Link Blue */
+  --border-color: #E2E8F0;
+  --card-bg: #FFFFFF;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;       /* Absolute Dark */
+  --text-color: #E2E8F0;     /* Bone White */
+  --primary-color: #FBD38D;  /* GOLD (Kontras di gelap) */
+  --accent-color: #90CDF4;   /* Light Blue */
+  --border-color: #2D3748;
+  --card-bg: #1A202C;
+}
+
+/* 3. RESET & TYPOGRAPHY */
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a { color: var(--accent-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 { color: var(--primary-color); font-weight: 700; margin-top: 1.5em; }
+img { max-width: 100%; height: auto; }
+
+/* 4. LAYOUT UTAMA */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 5. AKSESIBILITAS (WCAG AAA) */
+.skip-link {
+  position: absolute; top: -40px; left: 0;
+  background: var(--primary-color); color: #fff; padding: 8px; z-index: 100;
+}
+.skip-link:focus { top: 0; }
+
+:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+/* 6. HEADER & NAV */
+header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+.navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.brand-group { display: flex; align-items: center; gap: 10px; }
+.brand-logo { height: 40px; width: auto; } /* Style untuk logo.png */
+.brand { font-size: 1.2rem; font-weight: bold; color: var(--primary-color); }
+
+nav ul { display: flex; list-style: none; gap: 15px; padding: 0; margin: 0; }
+nav a { color: var(--text-color); font-weight: bold; }
+
+/* Tombol Tools */
+.nav-tools { display: flex; gap: 10px; }
+.nav-tools button {
+  background: none; border: 1px solid var(--text-color);
+  color: var(--text-color); padding: 5px 10px; border-radius: 20px; cursor: pointer;
+}
+
+/* 7. FOOTER */
+footer {
+  margin-top: 4rem; padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center; font-size: 0.9rem;
+}
+
+/* 8. PRINT STYLESHEET */
+@media print {
+  body { background: white !important; color: black !important; }
+  header, footer, .nav-tools, .no-print { display: none !important; }
+  a { text-decoration: underline; color: black !important; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}
