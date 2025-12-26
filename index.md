@@ -30,8 +30,15 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendi
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img 
       src="/images/profile-dimas.jpg" 
-      alt="Foto Profil Dimas Prasetyo Muharam" 
-      style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 5px solid var(--card-bg); box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
+      alt="Foto Resmi Dimas Prasetyo Muharam" 
+      style="
+        width: 240px; 
+        height: auto; 
+        border-radius: 12px; 
+        border: 1px solid var(--border-color); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        object-fit: contain;
+      "
       onerror="this.style.display='none'" 
     >
   </div>
