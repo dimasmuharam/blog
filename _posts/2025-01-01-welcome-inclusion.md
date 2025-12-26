@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Menuju Kebijakan Digital yang Inklusif: Sebuah Pengantar"
 date:   2025-01-01 08:00:00 +0700
 categories: [Public Policy]
