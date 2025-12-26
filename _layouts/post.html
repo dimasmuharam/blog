@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header" style="margin-bottom: 3rem; text-align: center;">
+    
+    {% if page.categories.size > 0 %}
+    <span style="display: inline-block; background: rgba(120, 29, 66, 0.1); color: var(--primary-color); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+      {{ page.categories | first }}
+    </span>
+    {% endif %}
+
+    <h1 class="post-title p-name" itemprop="name headline" style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 10px;">
+      {{ page.title | escape }}
+    </h1>
+    
+    <p class="post-meta" style="color: var(--text-color); opacity: 0.7; font-size: 0.95rem;">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%d %B %Y" }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody" style="font-size: 1.15rem; line-height: 1.8; max-width: 750px; margin: 0 auto;">
+    {{ content }}
+  </div>
+
+  <div style="margin-top: 4rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+    {% include newsletter.html %}
+  </div>
+
+  <div style="max-width: 750px; margin: 3rem auto 0; display: flex; justify-content: space-between; gap: 20px;">
+    
+    {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" style="flex: 1; text-decoration: none; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.9rem; transition: background 0.2s;" onmouseover="this.style.background='var(--card-bg)'" onmouseout="this.style.background='transparent'">
+      <span style="display: block; color: #666; margin-bottom: 5px;">&larr; Previous Post</span>
+      <span style="font-weight: bold; color: var(--primary-color);">{{ page.previous.title }}</span>
+    </a>
+    {% else %}
+    <div style="flex: 1;"></div> {% endif %}
+
+    {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" style="flex: 1; text-align: right; text-decoration: none; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.9rem; transition: background 0.2s;" onmouseover="this.style.background='var(--card-bg)'" onmouseout="this.style.background='transparent'">
+      <span style="display: block; color: #666; margin-bottom: 5px;">Next Post &rarr;</span>
+      <span style="font-weight: bold; color: var(--primary-color);">{{ page.next.title }}</span>
+    </a>
+    {% else %}
+    <div style="flex: 1;"></div> {% endif %}
+
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
