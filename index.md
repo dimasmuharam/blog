@@ -99,3 +99,6 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendi
     </a>
   </div>
 </section>
+<section>
+  {% include newsletter.html %}
+</section>
