@@ -1,0 +1,35 @@
+title: Dimas P. Muharam
+email: me@dimasmuharam.com
+description: >-
+  Chevening Scholar 2025, Researcher at BRIN, and Social Policy Student at University of Leeds. Founder of Dimaster Group.
+baseurl: ""
+url: "https://www.dimasmuharam.com" # PENTING: Canonical URL
+
+# Identitas Penulis
+author:
+  name: Dimas Prasetyo Muharam
+  twitter: dimasmuharam
+  linkedin: dimasmuharam
+
+# Build Settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-redirect-from
+
+# Konfigurasi Pagination (Halaman)
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Konfigurasi Archives (Kategori)
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
