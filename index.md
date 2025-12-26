@@ -8,9 +8,9 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendi
 <section style="padding: 40px 0; border-bottom: 1px dashed var(--border-color); display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 40px;">
   
   <div style="flex: 2; min-width: 300px;">
-    <span style="background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; letter-spacing: 0.5px;">
-      🇬🇧 Chevening Scholar 2025
-    </span>
+    <span style="background: var(--primary-color); color: var(--bg-color); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; letter-spacing: 0.5px;">
+  🇬🇧 Chevening Scholar 2025
+</span>
     
     <h1 style="font-size: 2.5rem; margin-top: 15px; line-height: 1.2;">
       Menjembatani Kebijakan, Teknologi, dan Inklusivitas.
