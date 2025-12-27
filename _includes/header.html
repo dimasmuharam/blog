@@ -1,40 +1,82 @@
-<header>
+<header role="banner">
   <div class="container navbar">
     <div class="brand-group">
-      <img src="{{ '/logo.png' | relative_url }}" alt="Logo Dimas" class="brand-logo" onerror="this.style.display='none'">
-      <a href="{{ '/' | relative_url }}" class="brand">
+      <img src="{{ '/logo.png' | relative_url }}" alt="" class="brand-logo" onerror="this.style.display='none'">
+      <a href="{{ '/' | relative_url }}" class="brand" aria-label="Dimas P. Muharam - Beranda">
         Dimas P. Muharam
       </a>
     </div>
     
     <div class="nav-wrapper">
-      <nav>
+      <nav aria-label="Navigasi Utama">
           <a href="{{ '/about/' | relative_url }}">About</a>
           <a href="{{ '/speaking/' | relative_url }}">Speaking</a>
+          <a href="{{ '/media/' | relative_url }}">Media</a>
+          <a href="{{ '/policy-briefs/' | relative_url }}">Policy</a>
           <a href="{{ '/blog/' | relative_url }}">Writings</a>
+          <a href="{{ '/bookshelf/' | relative_url }}">Bookshelf</a>
           <a href="{{ '/tools/' | relative_url }}">Tools</a>
       </nav>
     </div>
-<div class="nav-tools">
-  <a href="/search/" aria-label="Cari Artikel" style="
-          display: flex; 
-          align-items: center; 
-          justify-content: center; 
-          width: 40px; 
-          height: 40px; 
-          border-radius: 50%; 
-          border: 1px solid var(--border-color); 
-          color: var(--text-color); 
-          text-decoration: none;
-          transition: background 0.2s;
-      " onmouseover="this.style.background='var(--border-color)'" onmouseout="this.style.background='transparent'">
-        🔍
+
+    <div class="nav-tools">
+      <a href="{{ '/search/' | relative_url }}" aria-label="Cari Artikel" class="search-btn">
+        <span aria-hidden="true">🔍</span>
       </a>    
-  <button id="theme-toggle" aria-label="Ganti Mode Tampilan">🌙</button>
       
-      <button id="lang-toggle" aria-label="Bahasa saat ini Indonesia. Klik untuk terjemahkan ke Inggris" lang="id">
+      <button id="theme-toggle" aria-label="Ganti Mode Tampilan" title="Toggle Dark/Light Mode">🌙</button>
+      
+      <button id="lang-toggle" 
+              aria-label="Bahasa saat ini Indonesia. Klik untuk terjemahkan ke Inggris" 
+              title="Switch Language"
+              lang="id">
         ID
       </button>
     </div>
-      </div>
+  </div>
 </header>
+
+<style>
+  /* Menjaga navigasi tetap rapi */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.95rem;
+  }
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  .search-btn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 38px; 
+    height: 38px; 
+    border-radius: 50%; 
+    border: 1px solid var(--border-color); 
+    color: var(--text-color); 
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .search-btn:hover {
+    background: var(--border-color);
+  }
+  
+  /* Responsif: Menyembunyikan beberapa menu di layar kecil atau menggunakan menu hamburger jika diperlukan */
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      overflow-x: auto; /* Memungkinkan scroll horizontal jika menu terlalu panjang di mobile */
+      white-space: nowrap;
+      padding-bottom: 5px;
+    }
+  }
+</style>
