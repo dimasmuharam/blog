@@ -17,7 +17,7 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
     
     <p style="font-size: 1.2rem; margin-bottom: 25px;">
       Halo, saya <strong>Dimas P. Muharam</strong>. <br>
-      Peneliti di <strong>BRIN</strong>, mahasiswa MA Social and Public Policy di <strong>University of Leeds</strong>, <strong>Social Entrepreneur</strong>, serta pakar aksesibilitas digital yang berdedikasi menciptakan ekosistem publik yang setara bagi semua.
+      Peneliti di <strong>BRIN</strong>, mahasiswa MA Social and Public Policy di <strong>University of Leeds</strong>, dan <strong>Social Entrepreneur</strong>. Saya mendedikasikan pengalaman hidup saya sebagai tunanetra untuk mendorong terciptanya ekosistem publik yang setara bagi semua.
     </p>
 
     <div style="margin-bottom: 30px; border-left: 4px solid var(--primary-color); padding-left: 20px; font-style: italic; opacity: 0.8;">
@@ -28,8 +28,8 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
     </div>
 
     <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-      <a href="/about/" class="button" style="background: var(--primary-color); color: var(--bg-color); padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">Kenali Saya</a>
-      <a href="/media/" class="button" style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">Rekam Jejak Media</a>
+      <a href="/speaking/" class="button" style="background: var(--primary-color); color: var(--bg-color); padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">Undang Bicara</a>
+      <a href="/about/" class="button" style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px; border-radius: 6px; font-weight: bold; text-decoration: none;">Kenali Saya</a>
     </div>
   </div>
 
@@ -54,29 +54,56 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
   </div>
 </section>
 
+<section style="padding: 60px 0; border-bottom: 1px dashed var(--border-color);">
+  <div style="text-align: center; max-width: 850px; margin: 0 auto 50px;">
+    <h2 style="font-size: 2.2rem; margin-bottom: 15px;">Expertise & Lived Experience</h2>
+    <p style="font-size: 1.15rem; line-height: 1.6; opacity: 0.8;">
+      Saya menggabungkan riset kebijakan dan pengalaman pribadi sebagai tunanetra untuk membawakan narasi inklusi yang autentik, praktis, dan menggugah.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    <div style="background: var(--card-bg); padding: 35px; border-radius: 12px; border-left: 5px solid var(--primary-color);">
+      <h3 style="margin-top: 0; font-size: 1.3rem;">Motivational & Inclusion</h3>
+      <p style="font-size: 1rem;">Membangun <strong>Growth Mindset</strong> dan resiliensi melalui perjalanan hidup sebagai disabilitas netra yang menembus batas pendidikan dan birokrasi.</p>
+    </div>
+    <div style="background: var(--card-bg); padding: 35px; border-radius: 12px; border-left: 5px solid var(--primary-color);">
+      <h3 style="margin-top: 0; font-size: 1.3rem;">ASN & Workforce Policy</h3>
+      <p style="font-size: 1rem;">Navigasi kebijakan ketenagakerjaan dan reformasi birokrasi inklusif berdasarkan pengalaman nyata di kementerian dan riset kebijakan nasional.</p>
+    </div>
+    <div style="background: var(--card-bg); padding: 35px; border-radius: 12px; border-left: 5px solid var(--primary-color);">
+      <h3 style="margin-top: 0; font-size: 1.3rem;">Digital Accessibility</h3>
+      <p style="font-size: 1rem;">Perspektif pengguna <em>screen reader</em> dalam audit dan pengembangan teknologi yang aksesibel untuk ekosistem digital yang setara.</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 50px;">
+    <p style="font-style: italic; font-size: 1.1rem; margin-bottom: 25px;">Berpengalaman di 50+ panggung nasional & internasional sebagai narasumber strategis.</p>
+    <a href="/speaking/" class="button" style="background: var(--primary-color); color: white; padding: 15px 35px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block;">Lihat Penampilan Media & Portofolio</a>
+  </div>
+</section>
+
 <section style="padding: 50px 0; border-bottom: 1px dashed var(--border-color);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
     <h2 style="margin: 0; font-size: 1.8rem;">Knowledge Hub</h2>
-    <p style="margin: 0; opacity: 0.7; font-weight: bold;">Riset & Pemikiran</p>
+    <a href="/policy-briefs/" style="font-weight: bold; color: var(--primary-color);">Lihat Riset &rarr;</a>
   </div>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
     <a href="/policy-briefs/" class="feature-card">
       <div style="font-size: 2rem; margin-bottom: 15px;">📄</div>
       <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Policy Briefs</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Koleksi rekomendasi kebijakan inklusif berbasis riset dan bukti lapangan.</p>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Rekomendasi strategis berbasis data untuk kebijakan publik yang inklusif.</p>
     </a>
-
     <a href="/bookshelf/" class="feature-card">
       <div style="font-size: 2rem; margin-bottom: 15px;">📚</div>
       <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Bookshelf</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Kurasi literatur pilihan mengenai kebijakan publik, disabilitas, dan teknologi.</p>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Kurasi literatur terpilih seputar kebijakan, disabilitas, dan teknologi.</p>
     </a>
-
     <a href="/tools/event-checklist/" class="feature-card">
       <div style="font-size: 2rem; margin-bottom: 15px;">🗓️</div>
       <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Event Checklist</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Panduan praktis penyelenggaraan acara yang inklusif bagi semua orang.</p>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Panduan praktis penyelenggaraan acara yang aksesibel bagi semua.</p>
     </a>
   </div>
 </section>
@@ -101,51 +128,11 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
   </div>
 </section>
 
-<section style="padding: 50px 0; border-bottom: 1px dashed var(--border-color);">
-  <h2 style="font-size: 1.8rem;">Ekosistem Digital & Advokasi</h2>
-  <p>Inisiatif strategis untuk mempercepat inklusi disabilitas di Indonesia:</p>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 25px;">
-    <a href="https://www.asninklusif.or.id" target="_blank" class="eco-link">🤝 Forum ASN Inklusif</a>
-    <a href="https://kartunet.com" target="_blank" class="eco-link">🏢 Kartunet Community</a>
-    <a href="https://accessible.web.id" target="_blank" class="eco-link">🛠️ Accessible.web.id</a>
-    <a href="https://disabilitas.com" target="_blank" class="eco-link">⚖️ Disabilitas.com</a>
-  </div>
-</section>
-
 <section style="padding: 60px 0; text-align: center;">
   {% include newsletter.html %}
 </section>
 
 <style>
-  .feature-card {
-    text-decoration: none; 
-    color: var(--text-color); 
-    background: var(--card-bg); 
-    padding: 25px; 
-    border-radius: 12px; 
-    border: 1px solid var(--border-color); 
-    transition: all 0.3s ease;
-    display: block;
-  }
-  .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-color: var(--primary-color);
-  }
-  .eco-link {
-    padding: 18px; 
-    border: 1px solid var(--border-color); 
-    border-radius: 10px; 
-    text-decoration: none; 
-    color: var(--text-color); 
-    font-weight: bold; 
-    background: var(--card-bg);
-    text-align: center;
-    transition: 0.2s;
-  }
-  .eco-link:hover {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-  }
+  .feature-card { text-decoration: none; color: var(--text-color); background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); transition: 0.3s; display: block; }
+  .feature-card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 </style>
