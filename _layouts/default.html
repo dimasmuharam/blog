@@ -6,8 +6,12 @@
   
   <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
 
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
   {% seo %}
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">  
+  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
   <script>
@@ -15,22 +19,24 @@
       document.documentElement.setAttribute('data-theme', 'dark');
     }
   </script>
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:title" content="{{ page.title }} | Dimas P. Muharam">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-{% if page.image %}
-  <meta property="og:image" content="{{ page.image | absolute_url }}">
-{% else %}
-  <meta property="og:image" content="{{ '/images/profile-dimas.jpg' | absolute_url }}">
-{% endif %}
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/images/profile-dimas.jpg' | absolute_url }}{% endif %}">
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {% else %}
+    <meta property="og:image" content="{{ '/images/profile-dimas.jpg' | absolute_url }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/images/profile-dimas.jpg' | absolute_url }}{% endif %}">
+
 </head>
 <body>
 
