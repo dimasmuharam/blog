@@ -85,13 +85,26 @@ description: Undang Dimas P. Muharam sebagai pembicara untuk seminar kebijakan, 
         </div>
     </div>
 </section>
-
 <section style="padding: 80px 0; text-align: center;">
     <h2 style="font-size: 2rem; margin-bottom: 20px;">Mari Berkolaborasi</h2>
-    <p style="font-size: 1.2rem; margin-bottom: 40px;">
-        Siap menghadirkan perspektif baru untuk audiens Anda?
+    <p style="font-size: 1.2rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Untuk diskusi mengenai topik, ketersediaan jadwal, dan honorarium profesional, silakan hubungi Manajer saya.
     </p>
-    <a href="mailto:me@dimasmuharam.com" class="button" style="background: var(--primary-color); color: var(--bg-color); padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 5px 15px rgba(120, 29, 66, 0.3);">
-        📩 Kirim Undangan via Email
-    </a>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
+        
+        <a href="mailto:manager@dimasmuharam.com" class="button" style="background: var(--primary-color); color: var(--bg-color); padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(120, 29, 66, 0.3); text-decoration: none;">
+            📩 Kirim Undangan Resmi
+        </a>
+
+        <a href="https://wa.me/6285882611413?text=Halo%20Manajemen%20Dimaster,%20saya%20ingin%20mengundang%20Mas%20Dimas%20untuk%20acara..." target="_blank" style="display: inline-flex; align-items: center; color: var(--text-color); font-weight: bold; padding: 10px 20px; border: 1px solid var(--border-color); border-radius: 50px; transition: background 0.2s; text-decoration: none;" onmouseover="this.style.background='var(--card-bg)'" onmouseout="this.style.background='transparent'">
+            <span style="margin-right: 8px; font-size: 1.2rem;">💬</span> 
+            Chat Manajer via WhatsApp
+        </a>
+
+    </div>
+
+    <p style="font-size: 0.9rem; margin-top: 30px; opacity: 0.7;">
+        <em>Management handled by Dimaster Group.</em>
+    </p>
 </section>
