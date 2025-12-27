@@ -1,136 +1,125 @@
 ---
 layout: default
-title: Inclusive Event Checklist
+title: Inclusive Event Checklist - Alat Bantu Aksesibilitas Acara
 permalink: /tools/event-checklist/
-description: Alat bantu interaktif untuk memastikan acara Anda aksesibel bagi semua orang.
+description: Pastikan webinar atau seminar Anda aksesibel bagi semua orang dengan Checklist Inklusi interaktif dari Dimas P. Muharam.
 ---
 
-<div class="container" style="padding: 60px 0; max-width: 800px;">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Inclusive Event Checklist",
+  "operatingSystem": "All",
+  "applicationCategory": "BusinessApplication",
+  "description": "Alat bantu interaktif untuk mengevaluasi dan memastikan aksesibilitas acara bagi penyandang disabilitas.",
+  "author": {
+    "@type": "Person",
+    "name": "Dimas P. Muharam"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "IDR"
+  }
+}
+</script>
+
+<div class="container" style="padding: 40px 0; max-width: 850px;">
     
-    <div style="text-align: center; margin-bottom: 50px;">
+    <header style="margin-bottom: 50px; text-align: center;">
         <a href="/tools/">&larr; Kembali ke Strategic Tools</a>
-        <h1 style="margin-top: 20px;">Inclusive Event Checklist</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">
-            Gunakan alat bantu interaktif ini untuk memantau sejauh mana kesiapan aksesibilitas acara Anda (Webinar, Seminar, atau Rapat).
+        <h1 style="margin-top: 20px; font-size: 2.8rem;">Inclusive Event Checklist</h1>
+        <div style="text-align: left; background: var(--card-bg); padding: 25px; border-radius: 12px; border-left: 5px solid var(--primary-color); margin-top: 30px;">
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Menyelenggarakan acara yang inklusif bukan hanya soal kepatuhan terhadap regulasi, tetapi tentang memberikan hak yang setara bagi setiap individu untuk berpartisipasi. Sebagai peneliti dan aktivis, saya sering menemui hambatan teknis yang sebenarnya bisa dihindari dengan perencanaan yang matang. 
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Checklist ini dirancang secara sistematis untuk membantu panitia acara, praktisi HR, dan komunikator publik dalam memetakan kebutuhan aksesibilitas, mulai dari tahap registrasi hingga penyampaian materi secara visual dan auditori.
+            </p>
+        </div>
+    </header>
+
+    <div style="background: var(--bg-color); border: 2px solid var(--border-color); padding: 30px; border-radius: 15px; margin-bottom: 50px;">
+        <h2 style="text-align: center; margin-bottom: 30px;">Mulai Evaluasi Acara Anda</h2>
+        
+        <div style="margin-bottom: 25px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: bold;">
+                <span>Kesiapan Inklusi:</span>
+                <span id="progress-text">0%</span>
+            </div>
+            <div style="background: #eee; height: 12px; border-radius: 10px; overflow: hidden;">
+                <div id="progress-bar" style="background: var(--primary-color); width: 0%; height: 100%; transition: width 0.4s ease;"></div>
+            </div>
+        </div>
+
+        <div id="checklist-container">
+            <section style="margin-bottom: 30px;">
+                <h3 style="font-size: 1.2rem; color: var(--primary-color);">I. Komunikasi & Pendaftaran</h3>
+                <label class="check-item"><input type="checkbox" onchange="updateProgress()"> Formulir pendaftaran mendukung penggunaan Screen Reader.</label>
+                <label class="check-item"><input type="checkbox" onchange="updateProgress()"> Menanyakan kebutuhan akomodasi khusus (JBI, Braille, dll).</label>
+            </section>
+            
+            <section style="margin-bottom: 30px;">
+                <h3 style="font-size: 1.2rem; color: var(--primary-color);">II. Konten & Materi</h3>
+                <label class="check-item"><input type="checkbox" onchange="updateProgress()"> Video promosi memiliki teks/subtitle.</label>
+                <label class="check-item"><input type="checkbox" onchange="updateProgress()"> Slide presentasi menggunakan kontras warna tinggi.</label>
+                <label class="check-item"><input type="checkbox" onchange="updateProgress()"> Pembicara didorong melakukan deskripsi audio secara verbal.</label>
+            </section>
+        </div>
+
+        <div id="final-result" style="display: none; margin-top: 30px; padding: 20px; background: rgba(120, 29, 66, 0.05); border-radius: 10px; text-align: center;">
+            <h3 id="result-title"></h3>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <article style="line-height: 1.8; font-size: 1.1rem; color: var(--text-color);">
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 50px 0;">
+        <h2>Mengapa Aksesibilitas Acara Sangat Penting?</h2>
+        <p>
+            Berdasarkan data WHO, sekitar 15% penduduk dunia hidup dengan disabilitas. Di Indonesia, angka ini merepresentasikan jutaan potensi peserta yang seringkali terabaikan dalam acara publik. Dengan menerapkan prinsip <strong>Universal Design</strong>, acara Anda tidak hanya bermanfaat bagi penyandang disabilitas, tetapi juga bagi lansia, orang dengan keterbatasan koneksi internet (melalui teks), hingga mereka yang berada di lingkungan bising.
         </p>
-    </div>
-
-    <div style="background: var(--border-color); height: 10px; border-radius: 10px; margin-bottom: 30px; overflow: hidden;">
-        <div id="progress-bar" style="background: var(--primary-color); width: 0%; height: 100%; transition: width 0.3s ease;"></div>
-    </div>
-
-    <div id="checklist-container">
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.3rem; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 20px;">1. Komunikasi & Registrasi</h2>
-            <div class="check-item">
-                <input type="checkbox" id="item1" onchange="updateProgress()">
-                <label for="item1">Formulir pendaftaran aksesibel (mendukung Screen Reader).</label>
-            </div>
-            <div class="check-item">
-                <input type="checkbox" id="item2" onchange="updateProgress()">
-                <label for="item2">Ada pertanyaan khusus mengenai kebutuhan akomodasi (misal: JBI, kursi roda).</label>
-            </div>
-            <div class="check-item">
-                <input type="checkbox" id="item3" onchange="updateProgress()">
-                <label for="item3">Materi promosi menggunakan teks alternatif (Alt-text) pada gambar.</label>
-            </div>
-        </section>
-
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.3rem; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 20px;">2. Aksesibilitas Tempat/Platform</h2>
-            <div class="check-item">
-                <input type="checkbox" id="item4" onchange="updateProgress()">
-                <label for="item4">Lokasi memiliki ramp/lift untuk pengguna kursi roda (Fisik) atau mendukung pintasan keyboard (Online).</label>
-            </div>
-            <div class="check-item">
-                <input type="checkbox" id="item5" onchange="updateProgress()">
-                <label for="item5">Tersedia pencahayaan yang cukup bagi peserta Low Vision atau Tuli.</label>
-            </div>
-        </section>
-
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.3rem; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 20px;">3. Materi & Penyampaian</h2>
-            <div class="check-item">
-                <input type="checkbox" id="item6" onchange="updateProgress()">
-                <label for="item6">Pembicara diingatkan untuk mendeskripsikan konten visual (slide) secara verbal.</label>
-            </div>
-            <div class="check-item">
-                <input type="checkbox" id="item7" onchange="updateProgress()">
-                <label for="item7">Tersedia teks tertutup (Caption) atau Juru Bahasa Isyarat (JBI).</label>
-            </div>
-            <div class="check-item">
-                <input type="checkbox" id="item8" onchange="updateProgress()">
-                <label for="item8">Slide presentasi memiliki kontras warna yang tinggi.</label>
-            </div>
-        </section>
-    </div>
-
-    <div id="final-result" style="display: none; background: var(--card-bg); padding: 30px; border-radius: 12px; border: 2px solid var(--primary-color); text-align: center;">
-        <h3 id="result-title">Luar Biasa!</h3>
-        <p id="result-text"></p>
-        <button onclick="window.print()" class="button" style="background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 15px;">Simpan sebagai PDF Checklist</button>
-    </div>
-
-    <div style="margin-top: 50px; text-align: center; font-style: italic; opacity: 0.8;">
-        <p>Butuh konsultasi lebih mendalam untuk acara Anda? <a href="/speaking/">Hubungi Dimas P. Muharam</a>.</p>
-    </div>
+        <h3>Langkah Selanjutnya untuk Penyelenggara</h3>
+        <p>
+            Setelah menggunakan checklist di atas, Anda mungkin menyadari adanya celah dalam perencanaan Anda. Langkah pertama yang paling efektif adalah melibatkan penyandang disabilitas dalam proses perencanaan (<em>"Nothing about us without us"</em>). 
+        </p>
+        <p>
+            Jika Anda membutuhkan pendampingan lebih lanjut atau pelatihan mengenai cara membangun ekosistem acara yang inklusif secara sistematis, Anda dapat mempelajari lebih lanjut di halaman <a href="/speaking/">layanan konsultasi saya</a>.
+        </p>
+    </article>
 
 </div>
 
 <style>
     .check-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 15px;
+        display: block;
         background: var(--card-bg);
         padding: 15px;
-        border-radius: 8px;
         margin-bottom: 10px;
+        border-radius: 8px;
         border: 1px solid var(--border-color);
+        cursor: pointer;
         transition: 0.2s;
-        cursor: pointer;
     }
-    .check-item:hover {
-        border-color: var(--primary-color);
-    }
-    .check-item input[type="checkbox"] {
-        width: 20px;
-        height: 20px;
-        margin-top: 3px;
-        cursor: pointer;
-    }
-    .check-item label {
-        cursor: pointer;
-        flex: 1;
-    }
+    .check-item:hover { background: rgba(120, 29, 66, 0.02); border-color: var(--primary-color); }
+    .check-item input { margin-right: 15px; transform: scale(1.2); }
 </style>
 
 <script>
     function updateProgress() {
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         const checked = document.querySelectorAll('input[type="checkbox"]:checked');
-        const progress = (checked.length / checkboxes.length) * 100;
+        const percentage = Math.round((checked.length / checkboxes.length) * 100);
         
-        document.getElementById('progress-bar').style.width = progress + '%';
+        document.getElementById('progress-bar').style.width = percentage + '%';
+        document.getElementById('progress-text').innerText = percentage + '%';
 
         const resultDiv = document.getElementById('final-result');
-        const resultText = document.getElementById('result-text');
-        const resultTitle = document.getElementById('result-title');
-
-        if (progress > 0) {
+        if (percentage > 0) {
             resultDiv.style.display = 'block';
-            if (progress < 50) {
-                resultTitle.innerText = "Awal yang Baik!";
-                resultText.innerText = "Anda sudah mulai memperhatikan aksesibilitas. Masih ada beberapa poin krusial yang perlu dipenuhi agar acara benar-benar inklusif.";
-            } else if (progress < 100) {
-                resultTitle.innerText = "Hampir Sempurna!";
-                resultText.innerText = "Acara Anda sudah sangat inklusif. Tinggal sedikit lagi untuk memastikan semua orang bisa berpartisipasi tanpa hambatan.";
-            } else {
-                resultTitle.innerText = "Inclusion Champion!";
-                resultText.innerText = "Luar biasa! Checklist Anda lengkap. Acara ini siap menjadi standar bagi penyelenggaraan acara inklusif.";
-            }
-        } else {
-            resultDiv.style.display = 'none';
+            document.getElementById('result-title').innerText = percentage === 100 ? "Inclusion Champion!" : "Terus Tingkatkan!";
+            document.getElementById('result-text').innerText = "Kesiapan acara Anda mencapai " + percentage + "%. Simpan halaman ini atau cetak sebagai laporan evaluasi internal Anda.";
         }
     }
 </script>
