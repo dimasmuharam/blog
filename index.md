@@ -18,7 +18,7 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Pendi
     
     <p style="font-size: 1.2rem; margin-bottom: 25px;">
       Halo, saya <strong>Dimas P. Muharam</strong>. <br>
-      Peneliti di <strong>BRIN</strong> (Pusat Riset Pendidikan), Mahasiswa Kebijakan Sosial di <strong>University of Leeds</strong>, dan Pendiri <strong>Dimaster Group</strong>.
+      Peneliti di <strong>BRIN</strong> (Pusat Riset Pendidikan), Master's student MA Social and Public Policy di <strong>University of Leeds</strong> dengan beasiswa Chevening dari Pemerintah Inggris, pakar dan pengajar teknologi asistif untuk disabilitas dan aksesibilitas digital, pendiri Dimaster Group, serta <strong>Public Speaker</strong> yang berbagi inspirasi tentang inklusivitas dan ketangguhan penyandang disabilitas netra.
     </p>
 
     <div style="display: flex; gap: 15px; flex-wrap: wrap;">
