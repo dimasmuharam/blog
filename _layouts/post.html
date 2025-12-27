@@ -2,57 +2,195 @@
 layout: default
 ---
 
+{% if page.id %}
+  <meta name="citation_title" content="{{ page.title }}">
+  <meta name="citation_author" content="Dimas P. Muharam">
+  <meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  <meta name="citation_online_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  <meta name="citation_public_url" content="{{ page.url | absolute_url }}">
+  <meta name="citation_journal_title" content="{{ site.title }}">
+  <meta name="citation_language" content="{{ page.lang | default: 'id' }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% endif %}
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header" style="margin-bottom: 3rem; text-align: center;">
-    
+  <header class="post-header" style="margin-bottom: 2rem; text-align: center;">
     {% if page.categories.size > 0 %}
-    <span style="display: inline-block; background: rgba(120, 29, 66, 0.1); color: var(--primary-color); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+    <span class="post-category-label">
       {{ page.categories | first }}
     </span>
     {% endif %}
 
-    <h1 class="post-title p-name" itemprop="name headline" style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 10px;">
+    <h1 class="post-title p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
     
-    <p class="post-meta" style="color: var(--text-color); opacity: 0.7; font-size: 0.95rem;">
+    <p class="post-meta" style="opacity: 0.7; margin-bottom: 25px;">
+      Oleh <span itemprop="author">Dimas P. Muharam</span> • 
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%d %B %Y" }}
       </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {% endif %}
     </p>
+
+    <div id="article-tools" class="no-print">
+        <div id="audio-control-box">
+            <button id="btn-listen" onclick="toggleSpeech()" class="tool-btn primary">
+                <span id="audio-icon">🔊</span> <span id="audio-text">Dengarkan Artikel</span>
+            </button>
+            <div class="speed-control">
+                <label for="voice-speed">Kecepatan:</label>
+                <select id="voice-speed">
+                    <option value="0.8">0.8x</option>
+                    <option value="1.0" selected>1.0x</option>
+                    <option value="1.2">1.2x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2.0">2.0x</option>
+                </select>
+            </div>
+        </div>
+        <button onclick="window.print()" class="tool-btn secondary">
+            <span>🖨️</span> Cetak / Simpan PDF
+        </button>
+    </div>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody" style="font-size: 1.15rem; line-height: 1.8; max-width: 750px; margin: 0 auto;">
+  <div id="post-content-body" class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <div style="margin-top: 4rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+  <section class="no-print citation-box">
+    <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--primary-color);">Kutip Artikel Ini (APA Style)</h3>
+    <div class="citation-wrapper">
+      <div id="citation-text">
+        Muharam, D. P. ({{ page.date | date: "%Y" }}). <i>{{ page.title }}</i>. Dimas P. Muharam. {{ page.url | absolute_url }}
+      </div>
+      <button onclick="copyCitation()" class="copy-cite-btn">Salin</button>
+    </div>
+  </section>
+
+  <section class="no-print share-section">
+    <p style="font-weight: bold; margin-bottom: 1rem;">Bagikan Insight:</p>
+    <div class="share-grid">
+      <a href="https://wa.me/?text={{ page.title | url_encode }}%20-%20{{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" class="share-pill wa">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" class="share-pill fb">Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" class="share-pill li">LinkedIn</a>
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="share-pill x-soc">X</a>
+      <a href="https://t.me/share/url?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" class="share-pill tg">Telegram</a>
+      <button onclick="copyLink()" class="share-pill link">🔗 Salin Link</button>
+    </div>
+  </section>
+
+  <div class="no-print newsletter-post-wrapper">
     {% include newsletter.html %}
   </div>
 
-  <div style="max-width: 750px; margin: 3rem auto 0; display: flex; justify-content: space-between; gap: 20px;">
-    
+  <div class="no-print nav-post-container">
     {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}" style="flex: 1; text-decoration: none; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.9rem; transition: background 0.2s;" onmouseover="this.style.background='var(--card-bg)'" onmouseout="this.style.background='transparent'">
-      <span style="display: block; color: #666; margin-bottom: 5px;">&larr; Previous Post</span>
-      <span style="font-weight: bold; color: var(--primary-color);">{{ page.previous.title }}</span>
+    <a href="{{ page.previous.url | relative_url }}" class="nav-card">
+      <small>&larr; Sebelumnya</small>
+      <span>{{ page.previous.title }}</span>
     </a>
-    {% else %}
-    <div style="flex: 1;"></div> {% endif %}
+    {% else %}<div style="flex: 1;"></div>{% endif %}
 
     {% if page.next %}
-    <a href="{{ page.next.url | relative_url }}" style="flex: 1; text-align: right; text-decoration: none; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.9rem; transition: background 0.2s;" onmouseover="this.style.background='var(--card-bg)'" onmouseout="this.style.background='transparent'">
-      <span style="display: block; color: #666; margin-bottom: 5px;">Next Post &rarr;</span>
-      <span style="font-weight: bold; color: var(--primary-color);">{{ page.next.title }}</span>
+    <a href="{{ page.next.url | relative_url }}" class="nav-card" style="text-align: right;">
+      <small>Selanjutnya &rarr;</small>
+      <span>{{ page.next.title }}</span>
     </a>
-    {% else %}
-    <div style="flex: 1;"></div> {% endif %}
-
+    {% else %}<div style="flex: 1;"></div>{% endif %}
   </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<style>
+  /* Base Layout */
+  .post-content { font-size: 1.15rem; line-height: 1.8; max-width: 750px; margin: 0 auto; color: var(--text-color); }
+  .post-title { font-size: 2.5rem; line-height: 1.2; margin-bottom: 10px; }
+  .post-category-label { display: inline-block; background: rgba(120, 29, 66, 0.1); color: var(--primary-color); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
+
+  /* Article Tools */
+  #article-tools { display: flex; flex-direction: column; align-items: center; gap: 15px; margin: 2rem 0; }
+  #audio-control-box { background: var(--card-bg); padding: 15px 25px; border-radius: 15px; border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .tool-btn { border: none; padding: 10px 25px; border-radius: 50px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: 0.2s; }
+  .tool-btn.primary { background: var(--primary-color); color: white; }
+  .tool-btn.secondary { background: var(--border-color); color: var(--text-color); font-size: 0.9rem; }
+  .speed-control { font-size: 0.85rem; opacity: 0.9; display: flex; gap: 8px; align-items: center; }
+  #voice-speed { background: transparent; border: 1px solid var(--border-color); color: var(--text-color); border-radius: 4px; }
+
+  /* Citation Box */
+  .citation-box { max-width: 750px; margin: 3rem auto; padding: 20px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; }
+  .citation-wrapper { background: var(--bg-color); padding: 15px; border-radius: 8px; border-left: 4px solid var(--primary-color); position: relative; }
+  #citation-text { font-family: monospace; font-size: 0.9rem; padding-right: 70px; line-height: 1.4; }
+  .copy-cite-btn { position: absolute; right: 10px; top: 12px; background: var(--primary-color); color: white; border: none; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; }
+
+  /* Share Section */
+  .share-section { max-width: 750px; margin: 3rem auto; text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); }
+  .share-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .share-pill { padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: bold; color: white; transition: 0.2s; }
+  .share-pill.wa { background: #25D366; } .share-pill.fb { background: #1877F2; } .share-pill.li { background: #0077b5; } 
+  .share-pill.x-soc { background: #000; } .share-pill.tg { background: #0088cc; } .share-pill.link { background: var(--border-color); color: var(--text-color); border: none; cursor: pointer; }
+  .share-pill:hover { transform: translateY(-2px); opacity: 0.9; }
+
+  /* Nav Card */
+  .nav-post-container { max-width: 750px; margin: 3rem auto; display: flex; justify-content: space-between; gap: 20px; }
+  .nav-card { flex: 1; text-decoration: none; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; transition: 0.2s; }
+  .nav-card:hover { background: var(--card-bg); }
+  .nav-card span { display: block; font-weight: bold; color: var(--primary-color); margin-top: 5px; }
+
+  .newsletter-post-wrapper { border-top: 1px dashed var(--border-color); padding-top: 3rem; margin-top: 1rem; }
+
+  /* CSS KHUSUS PRINT */
+  @media print {
+    .no-print { display: none !important; }
+    body { background: white !important; color: black !important; font-size: 12pt; }
+    .post-content { max-width: 100% !important; margin: 0 !important; }
+    a:after { content: " (" attr(href) ")"; font-size: 0.8rem; color: #666; }
+    .post-title { color: black !important; }
+  }
+</style>
+
+<script>
+let synth = window.speechSynthesis;
+let utterance;
+let isSpeaking = false;
+
+function toggleSpeech() {
+    const btnText = document.getElementById('audio-text');
+    const btnIcon = document.getElementById('audio-icon');
+    const speedSelect = document.getElementById('voice-speed');
+
+    if (!isSpeaking) {
+        const content = document.getElementById('post-content-body').innerText;
+        utterance = new SpeechSynthesisUtterance(content);
+        utterance.lang = 'id-ID'; 
+        utterance.rate = parseFloat(speedSelect.value);
+        utterance.onend = () => { resetAudioUI(); };
+        
+        synth.speak(utterance);
+        isSpeaking = true;
+        btnText.innerText = "Berhenti";
+        btnIcon.innerText = "⏹️";
+    } else {
+        synth.cancel();
+        resetAudioUI();
+    }
+}
+
+function resetAudioUI() {
+    isSpeaking = false;
+    document.getElementById('audio-text').innerText = "Dengarkan Artikel";
+    document.getElementById('audio-icon').innerText = "🔊";
+}
+
+function copyCitation() {
+    const text = document.getElementById('citation-text').innerText;
+    navigator.clipboard.writeText(text).then(() => { alert('Kutipan disalin!'); });
+}
+
+function copyLink() {
+    navigator.clipboard.writeText(window.location.href).then(() => { alert('Link disalin!'); });
+}
+
+window.onbeforeunload = () => { synth.cancel(); };
+</script>
