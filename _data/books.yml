@@ -1,0 +1,21 @@
+- title: "Crip Theory"
+  author: "Robert McRuer"
+  category: "Theory"
+  recommendation: "Highly Recommended"
+  notes: "Buku ini mengubah cara saya melihat hubungan antara identitas disabilitas dan norma-norma sosial."
+  link: "https://www.goodreads.com/book/show/..."
+
+- title: "Mismatch"
+  author: "Kat Holmes"
+  category: "Digital Inclusion"
+  recommendation: "Must Read"
+  notes: "Bagaimana inklusi dapat mendorong inovasi. Kat Holmes menjelaskan bahwa desain yang buruk menciptakan mismatch."
+  link: "https://www.goodreads.com/book/show/..."
+
+# Nanti kalau habis baca buku baru, Mas Dimas tinggal tambah di bawah sini:
+- title: "Judul Buku Baru"
+  author: "Nama Penulis"
+  category: "Policy"
+  recommendation: "Recommended"
+  notes: "Kesan singkat Mas Dimas tentang buku ini."
+  link: "#"
