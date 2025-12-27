@@ -16,7 +16,21 @@
       </nav>
     </div>
 <div class="nav-tools">
-      <button id="theme-toggle" aria-label="Ganti Mode Tampilan">🌙</button>
+  <a href="/search/" aria-label="Cari Artikel" style="
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          width: 40px; 
+          height: 40px; 
+          border-radius: 50%; 
+          border: 1px solid var(--border-color); 
+          color: var(--text-color); 
+          text-decoration: none;
+          transition: background 0.2s;
+      " onmouseover="this.style.background='var(--border-color)'" onmouseout="this.style.background='transparent'">
+        🔍
+      </a>    
+  <button id="theme-toggle" aria-label="Ganti Mode Tampilan">🌙</button>
       
       <button id="lang-toggle" aria-label="Bahasa saat ini Indonesia. Klik untuk terjemahkan ke Inggris" lang="id">
         ID
