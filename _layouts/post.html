@@ -25,15 +25,16 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
-    
-    <p class="post-meta" style="opacity: 0.7; margin-bottom: 25px;">
-      Oleh <span itemprop="author">Dimas P. Muharam</span> • 
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%d %B %Y" }}
-      </time>
-    </p>
-
-    <div id="article-tools" class="no-print">
+    <p class="post-meta">
+  Oleh <span>Dimas P. Muharam</span> • {{ page.date | date: "%d %B %Y" }}
+  
+  {% if page.journal_link %}
+    <br><span style="color: var(--primary-color); font-weight: bold;">
+      Diterbitkan di: <a href="{{ page.journal_link }}" target="_blank">{{ page.status | default: "Lihat Jurnal" }}</a>
+    </span>
+  {% endif %}
+</p>
+        <div id="article-tools" class="no-print">
         <div id="audio-control-box">
             <button id="btn-listen" onclick="toggleSpeech()" class="tool-btn primary">
                 <span id="audio-icon">🔊</span> <span id="audio-text">Dengarkan Artikel</span>
