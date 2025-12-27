@@ -33,3 +33,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
+collections:
+  policy_briefs:
+    output: true
+    permalink: /policy-briefs/:name/
