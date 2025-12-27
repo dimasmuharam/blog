@@ -56,27 +56,27 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
 
 <section style="padding: 50px 0; border-bottom: 1px dashed var(--border-color);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-    <h2 style="margin: 0; font-size: 1.8rem;">Strategic Tools</h2>
-    <a href="/tools/" style="font-weight: bold; color: var(--primary-color);">Lihat Semua &rarr;</a>
+    <h2 style="margin: 0; font-size: 1.8rem;">Knowledge Hub</h2>
+    <p style="margin: 0; opacity: 0.7; font-weight: bold;">Riset & Pemikiran</p>
   </div>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-    <a href="/tools/roi-calculator/" class="tool-card">
-      <div style="font-size: 2rem; margin-bottom: 15px;">🧮</div>
-      <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">ROI Calculator</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Hitung potensi kerugian ekonomi dari ekosistem digital yang tidak aksesibel.</p>
+    <a href="/policy-briefs/" class="feature-card">
+      <div style="font-size: 2rem; margin-bottom: 15px;">📄</div>
+      <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Policy Briefs</h3>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Koleksi rekomendasi kebijakan inklusif berbasis riset dan bukti lapangan.</p>
     </a>
 
-    <a href="/tools/event-checklist/" class="tool-card">
+    <a href="/bookshelf/" class="feature-card">
+      <div style="font-size: 2rem; margin-bottom: 15px;">📚</div>
+      <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Bookshelf</h3>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Kurasi literatur pilihan mengenai kebijakan publik, disabilitas, dan teknologi.</p>
+    </a>
+
+    <a href="/tools/event-checklist/" class="feature-card">
       <div style="font-size: 2rem; margin-bottom: 15px;">🗓️</div>
       <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Event Checklist</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Panduan praktis untuk menyelenggarakan acara yang inklusif dan aksesibel.</p>
-    </a>
-
-    <a href="/tools/citation/" class="tool-card">
-      <div style="font-size: 2rem; margin-bottom: 15px;">📚</div>
-      <h3 style="margin: 0 0 10px 0; color: var(--primary-color);">Citation Generator</h3>
-      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Generate sitasi akademik otomatis untuk referensi karya tulis dan riset saya.</p>
+      <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">Panduan praktis penyelenggaraan acara yang inklusif bagi semua orang.</p>
     </a>
   </div>
 </section>
@@ -117,7 +117,7 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
 </section>
 
 <style>
-  .tool-card {
+  .feature-card {
     text-decoration: none; 
     color: var(--text-color); 
     background: var(--card-bg); 
@@ -127,7 +127,7 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
     transition: all 0.3s ease;
     display: block;
   }
-  .tool-card:hover {
+  .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     border-color: var(--primary-color);
