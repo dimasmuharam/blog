@@ -49,43 +49,42 @@ description: Kumpulan alat bantu digital strategis untuk analisis kebijakan inkl
 
     </div>
 
-    <div style="background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 3rem 0;">
-        <article style="max-width: 800px; margin: 0 auto;">
+    <div style="background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 4rem 0;">
+        <article style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
             <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary-color);">Dari Kebijakan Menjadi Praktik: Mengapa Data Itu Vital?</h2>
             
-            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8;">
                 Indonesia telah memiliki payung hukum yang kuat melalui <strong>UU No. 8 Tahun 2016 tentang Penyandang Disabilitas</strong>. Namun, tantangan terbesar kita saat ini bukan lagi pada regulasi, melainkan pada implementasi teknis di lapangan. Kesenjangan antara "apa yang tertulis" dan "apa yang terjadi" seringkali disebabkan oleh kurangnya alat ukur yang presisi.
             </p>
 
-            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8;">
                 Halaman <em>Strategic Tools</em> ini saya kembangkan sebagai bagian dari komitmen riset dan advokasi untuk menyediakan infrastruktur digital yang mendukung pengambilan keputusan berbasis bukti (<em>Evidence-Based Policy</em>).
             </p>
 
-            <h3 style="margin-top: 2.5rem;">1. Menguantifikasi Nilai Inklusi (Economic Value)</h3>
-            <p>
+            <h3 style="margin-top: 2.5rem; color: var(--primary-color);">1. Menguantifikasi Nilai Inklusi (Economic Value)</h3>
+            <p style="line-height: 1.8;">
                 Seringkali, aksesibilitas dianggap sebagai beban biaya (<em>cost center</em>) bagi perusahaan. Padahal, data menunjukkan sebaliknya. Dengan <strong>ROI Calculator</strong>, kita mengubah narasi sosial menjadi narasi ekonomi. Kita berbicara tentang <em>market share</em> yang hilang. Pendekatan ini terbukti lebih efektif dalam meyakinkan sektor privat untuk berinvestasi pada infrastruktur digital yang inklusif.
             </p>
 
-            <h3 style="margin-top: 2rem;">2. Integritas Akademik dalam Studi Disabilitas</h3>
-            <p>
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">2. Integritas Akademik dalam Studi Disabilitas</h3>
+            <p style="line-height: 1.8;">
                 Dalam dunia riset kebijakan, referensi adalah mata uang. Prinsip <em>"Nothing About Us Without Us"</em> menuntut agar suara penyandang disabilitas menjadi referensi utama, bukan objek semata. Alat <strong>Citation Generator</strong> di sini bukan sekadar fitur teknis, melainkan upaya mempermudah peneliti lain untuk merujuk pada karya-karya yang menempatkan perspektif disabilitas sebagai subjek aktif.
             </p>
 
-            <h3 style="margin-top: 2rem;">3. Standarisasi Layanan Publik</h3>
-            <p>
+            <h3 style="margin-top: 2rem; color: var(--primary-color);">3. Standarisasi Layanan Publik</h3>
+            <p style="line-height: 1.8;">
                 Bagaimana mendefinisikan "acara yang inklusif"? Tanpa parameter yang jelas, inklusi hanya menjadi jargon. <strong>Event Checklist</strong> yang tersedia di sini dirancang berdasarkan standar internasional dan praktik terbaik di lapangan, membantu penyelenggara negara maupun swasta untuk melakukan audit mandiri sebelum acara berlangsung.
             </p>
 
-            <div style="margin-top: 3rem; padding: 20px; background: rgba(120, 29, 66, 0.05); border-left: 4px solid var(--primary-color); border-radius: 4px;">
-                <p style="margin: 0; font-style: italic; color: var(--text-color);">
+            <div style="margin-top: 4rem; padding: 30px; background: rgba(120, 29, 66, 0.05); border-left: 5px solid var(--primary-color); border-radius: 8px;">
+                <p style="margin: 0; font-size: 1.2rem; font-style: italic; color: var(--text-color); line-height: 1.6;">
                     "Teknologi digital seharusnya menjadi 'Great Equalizer' (penyeimbang keadaan), bukan tembok pemisah baru. Tools ini adalah kontribusi kecil saya untuk meruntuhkan tembok tersebut."
                 </p>
-                <p style="margin-top: 10px; font-weight: bold;">— Dimas P. Muharam</p>
+                <p style="margin-top: 15px; font-weight: bold; font-size: 1.1rem;">— Dimas P. Muharam</p>
             </div>
 
         </article>
     </div>
-
 </div>
 
 <style>
@@ -111,7 +110,6 @@ description: Kumpulan alat bantu digital strategis untuk analisis kebijakan inkl
         text-decoration: none;
     }
 
-    /* Aksen garis atas berwarna maroon saat hover */
     .card-tool::before {
         content: '';
         position: absolute;
