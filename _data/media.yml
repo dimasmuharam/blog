@@ -1,0 +1,441 @@
+# FEATURED SELECTIONS (Sesuai Permintaan)
+- program: "Kick Andy Show"
+  channel: "Metro TV"
+  title: "Achieving Dreams in to Darkness"
+  date: 2011-01-01
+  link: "https://www.youtube.com/results?search_query=dimas+prasetyo+muharam+kick+andy"
+  featured: true
+  type: "Talkshow TV"
+
+- program: "Sarah Sechan"
+  channel: "NET TV"
+  title: "Hacking the Limit"
+  date: 2014-01-01
+  link: "https://www.youtube.com/results?search_query=dimas+prasetyo+muharam+sarah+sechan"
+  featured: true
+  type: "Talkshow TV"
+
+- program: "The World Tonight"
+  channel: "CNN Indonesia"
+  title: "Disability is not a Limit"
+  date: 2016-01-01
+  link: "https://www.youtube.com/results?search_query=dimas+prasetyo+muharam+cnn+indonesia"
+  featured: true
+  type: "Talkshow TV"
+
+# FULL ARCHIVE
+- program: "Inspirasi"
+  channel: "Singapore Radio International"
+  title: "Another world: a blind young figure"
+  date: 2009-01-01
+  link: "#"
+  featured: false
+  type: "Radio"
+
+- program: "Seminar Online Business"
+  channel: "State Polytechnic of Jakarta"
+  title: "Young Online Entrepreneur"
+  date: 2010-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Seminar LKSM Bring the Leader in You"
+  channel: "BEM UI"
+  title: "Leadership and Passion"
+  date: 2010-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Seminar Youth Talks for Indonesia"
+  channel: "BEM UI"
+  title: "Leadership and Social Contribution"
+  date: 2010-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Workshop for Student’s Press"
+  channel: "FIB UI"
+  title: "How to build a website instantly"
+  date: 2010-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Talkshow Building a Team"
+  channel: "BEM UI"
+  title: "Sharing experience about conducting an event"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Santri Indigo"
+  channel: "Republika Dompet Duafa"
+  title: "Utilizing internet for Pesantren students"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Seminar Youth Contribution"
+  channel: "BEM UI"
+  title: "Youth and contribution"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Talkshow Effective Learning"
+  channel: "Universitas Indonesia"
+  title: "Time management for university student"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Talkshow Rising Awareness"
+  channel: "Rotary Batavia Jakarta"
+  title: "Public perspective toward person with disability"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "New Students Welcoming"
+  channel: "FIB UI"
+  title: "Share motivation and experience"
+  date: 2011-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Sang Juara"
+  channel: "B-Channel TV"
+  title: "Youth and contribution"
+  date: 2012-01-01
+  link: "#"
+  featured: false
+  type: "Talkshow TV"
+
+- program: "Meniti Asa"
+  channel: "Daai TV"
+  title: "Redefining the Youth Oath"
+  date: 2012-01-01
+  link: "#"
+  featured: false
+  type: "Talkshow TV"
+
+- program: "FK Unpad Fair"
+  channel: "Universitas Padjajaran"
+  title: "Better Sight Brighter Future"
+  date: 2012-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Leadership Training"
+  channel: "FIB UI"
+  title: "Share experience to university students"
+  date: 2012-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Talkshow Psycho Special Needs"
+  channel: "UIN Syarif Hidayatullah"
+  title: "Sharing motivation to special school students"
+  date: 2012-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Acceleration Program Training"
+  channel: "University of Indonesia"
+  title: "Scientific Writing"
+  date: 2013-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Pecha Kucha Jakarta vol.14"
+  channel: "Maverick Indonesia"
+  title: "Theme #Edu+"
+  date: 2013-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "NCDA 2013"
+  channel: "Indonesia Disabled Care Community"
+  title: "Inclusive Education for person with disabilities"
+  date: 2013-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "National ID-IGF Dialogue"
+  channel: "Internet Governance Forum"
+  title: "Internet to Empower Person with Disabilities"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Public Discussion"
+  channel: "Eisenhower Fellowship Alumni"
+  title: "Accessible Infrastructure and Transportation"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Talkshow MyNight"
+  channel: "RISKA"
+  title: "Youth Oath"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Tuesday Talk in Love"
+  channel: "Kencomm Management"
+  title: "Sharing experience and motivation"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Workshop Gender & Disability"
+  channel: "IndII"
+  title: "Urban Transportation Initiative"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Lifestyle Inspiration"
+  channel: "Eljohn Radio"
+  title: "Sharing experience and motivation"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Radio"
+
+- program: "Bincang Orang Maju (BOM)"
+  channel: "Indosat Ooredoo"
+  title: "Sharing motivation on Indosat’s anniversary"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Young Leaders Talk 8"
+  channel: "UIN Sunan Gunung Jati"
+  title: "Resolution for self-revolution"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Entrepreneurship Training"
+  channel: "Indonesia Business Links"
+  title: "Break the limit to be a successful Entrepreneur"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Youthnesian"
+  channel: "UNFPA"
+  title: "Investing in Young People"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Seminar ICT Productivity"
+  channel: "Ministry of Communication and Informatics"
+  title: "ICT for the Productivity of Person with Disabilities"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "School of Volunteers"
+  channel: "Indonesian Future Leaders"
+  title: "Sharing experience in volunteering"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Indonesian Student Unite"
+  channel: "Forum Indonesia Muda"
+  title: "Leadership and Character Building"
+  date: 2014-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "ASEAN Literary Festival 2015"
+  channel: "ASEAN Literary Festival"
+  title: "The voices of Diffable People"
+  date: 2015-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "We Care 2015"
+  channel: "Universitas Indonesia"
+  title: "Now and Next: What Can We Do for Them?"
+  date: 2015-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Talkshow Generasi Eksis"
+  channel: "Excelent Institute"
+  title: "Sharing motivation to high school students"
+  date: 2015-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Employability Workshop"
+  channel: "UNESCO"
+  title: "Accessible Infrastructure, Transportation, and Technology"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "XL Future Leaders Social Act"
+  channel: "XL Axiata"
+  title: "Sharing experience and motivation"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "ICT Literacy Training"
+  channel: "Ministry of Communication and Informatics"
+  title: "Microsoft Office and internet training"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "ICT Training for Blind"
+  channel: "Indonesian Blind Union"
+  title: "Microsoft Office and Internet Marketing"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Jambore TIK Disabilitas"
+  channel: "Ministry of Communication and Informatics"
+  title: "Microsoft Office and Internet"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "Internet Marketing Boothcamp"
+  channel: "Kartunet and RIAT"
+  title: "Internet marketing online shop mastery"
+  date: 2016-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "SKKNI Certification"
+  channel: "Ministry of Communication and Informatics"
+  title: "How internet can enable people with disability"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Ayobaca.in Launching"
+  channel: "Najwa Shihab & XL Axiata"
+  title: "Talking about audiobook for blinds"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Jambore TIK Disabilitas 2017"
+  channel: "Ministry of Communication and Informatics"
+  title: "Ms Office and Internet"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "SKKNI Training"
+  channel: "Ministry of Communication and Informatics"
+  title: "Office Operator Junior"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Instructor"
+
+- program: "International Disability Day"
+  channel: "Universitas Negeri Jakarta"
+  title: "Increase the Capasity of People with Disability"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "International Disability Day"
+  channel: "Universitas Muhammadiyah Jakarta"
+  title: "Opportunity from Internet Marketing"
+  date: 2017-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Blind Students Seminar"
+  channel: "Universitas Negeri Jakarta"
+  title: "Sharing experience with Special Education students"
+  date: 2018-01-01
+  link: "#"
+  featured: false
+  type: "Guest Lecturer"
+
+- program: "Kolega Sharing Session"
+  channel: "Kolega X Markplus"
+  title: "Disability Empowerment and Inclusive Education"
+  date: 2018-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "Semangat Pagi Indonesia"
+  channel: "TVRI Jakarta"
+  title: "Sharing motivation and inspiration"
+  date: 2018-01-01
+  link: "#"
+  featured: false
+  type: "Talkshow TV"
+
+- program: "FKM UI Science Festival"
+  channel: "University of Indonesia"
+  title: "Inclusive Education in Higher Education"
+  date: 2018-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
+
+- program: "8th World Arts & Culture Summit"
+  channel: "IFACCA (Kuala Lumpur)"
+  title: "Digital Hierarchy: Who controls, who accesses?"
+  date: 2019-01-01
+  link: "#"
+  featured: false
+  type: "Speaker"
