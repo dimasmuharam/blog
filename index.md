@@ -35,8 +35,8 @@ description: Dimas P. Muharam - Chevening Scholar 2025, Peneliti BRIN, dan Socia
 
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <img 
-      src="/images/profile.jpg" 
-      alt="Dimas P. Muharam" 
+      src="/images/profile-dimas.jpg" 
+      alt="Foto Dimas P. Muharam mengenakan jas hitam dengan latar belakang putih" 
       style="width: 280px; height: auto; border-radius: 15px; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover;"
       onerror="this.style.display='none'" 
     >
