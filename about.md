@@ -17,7 +17,7 @@ description: Profil Dimas P. Muharam - Peneliti BRIN, Chevening Scholar, dan Soc
 
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; margin-bottom: 3rem;">
             <div style="flex: 1; min-width: 280px;">
-                <img src="/images/profile.jpg" alt="Dimas P. Muharam" style="width: 100%; border-radius: 15px; border: 4px solid var(--primary-color); box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <img src="/images/profile.jpg" alt="Foto Dimas P. Muharam di depan Big Ben, London, UK" style="width: 100%; border-radius: 15px; border: 4px solid var(--primary-color); box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
             </div>
 
             <div style="flex: 2; min-width: 300px; line-height: 1.8;">
